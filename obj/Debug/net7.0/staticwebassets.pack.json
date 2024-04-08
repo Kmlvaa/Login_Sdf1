@@ -105,6 +105,10 @@
       "PackagePath": "staticwebassets\\fonts\\helveticaneue_medium-webfont.woff2"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\Login\\Login\\wwwroot\\img\\Screenshot 2024-03-28 134245.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2024-03-28 134245.png"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\Login\\Login\\wwwroot\\img\\bg-img\\1.jpg",
       "PackagePath": "staticwebassets\\img\\bg-img\\1.jpg"
     },

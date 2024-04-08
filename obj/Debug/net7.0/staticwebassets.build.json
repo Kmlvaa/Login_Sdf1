@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZjdGoGtFBCgQIWkAkF08etku4Oi4I04XR/mojrqzN3o=",
+  "Hash": "z87JgPcSrYDjtclwmT42FQevALeDsrtahiweB6qtTBY=",
   "Source": "Login",
   "BasePath": "_content/Login",
   "Mode": "Default",
@@ -2378,6 +2378,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\product-img\\Tangerine.jpg3444dc7f-ca18-48e7-a404-7c214acb7e2d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Login\\Login\\wwwroot\\img\\Screenshot 2024-03-28 134245.png",
+      "SourceId": "Login",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Login\\Login\\wwwroot\\",
+      "BasePath": "_content/Login",
+      "RelativePath": "img/Screenshot 2024-03-28 134245.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Screenshot 2024-03-28 134245.png"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\Login\\Login\\wwwroot\\img\\testimonial-1.jpg",

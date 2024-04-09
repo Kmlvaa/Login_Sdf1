@@ -2,12 +2,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Login.Data;
 using Login.Entities;
+using Login.Helper;
 
 namespace Login
 {
 	public class Program
 	{
-		public static void Main(string[] args)
+		public static async Task Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
 			// Add services to the container.
@@ -35,6 +36,8 @@ namespace Login
 				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 				app.UseHsts();
 			}
+
+			await DataSeed.InitializeAsync(app.Services);
 
 			app.UseHttpsRedirection();
             app.UseStaticFiles();

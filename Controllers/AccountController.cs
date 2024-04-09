@@ -27,7 +27,6 @@ namespace Pinterest.Controllers
 		}
 		public IActionResult Login()
 		{
-			if (User.Identity.IsAuthenticated) return RedirectToAction("Index", "Home");
 			return View();
 		}
 		[HttpPost]
@@ -54,8 +53,37 @@ namespace Pinterest.Controllers
 
 			return RedirectToAction("Index", "Home");
 		}
+        public IActionResult Register()
+        {
+            return View();
+        }
 
-		public async Task<IActionResult> LogOut()
+        [HttpPost]
+        public async Task<IActionResult> Register(AccountRegisterVM model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var newUser = new AppUser
+            {
+                Firstname = model.FirstName,
+                Lastname = model.LastName,
+                Email = model.Email,
+                UserName = model.Email,
+            };
+
+            var result = await _userManager.CreateAsync(newUser, model.Password);
+
+            if (!result.Succeeded)
+            {
+                model.ErrorMessage = string.Join(" ", result.Errors.Select(x => x.Description));
+                return View(model);
+            }
+
+            Console.WriteLine(result.ToString());
+            return RedirectToAction("Index", "Home");
+        }
+
+        public async Task<IActionResult> LogOut()
 		{
 			await _signInManager.SignOutAsync();
 			return RedirectToAction(nameof(Login));

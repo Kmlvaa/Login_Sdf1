@@ -80,7 +80,7 @@ namespace Pinterest.Controllers
             }
 
             Console.WriteLine(result.ToString());
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
         public async Task<IActionResult> LogOut()
